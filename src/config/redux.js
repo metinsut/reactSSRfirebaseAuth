@@ -45,6 +45,6 @@ const middleware = [thunk.withExtraArgument({ getFirebase, getFirestore })];
 
 const config = applyMiddleware(...middleware, logger);
 
-const store = createStoreWithFirebase(reducers, typeof window !== "undefined" && window && window.INITIAL_STATE, config);
+const store = createStoreWithFirebase(reducers, typeof window !== "undefined" && window ? window.INITIAL_STATE : "", config);
 
 export default store;

@@ -6,7 +6,7 @@ import { FormRoot, FormTitle, FormBlock, FormItem, InputBlock, InputItem, InputN
 import { signUp_user } from "./signUpAction";
 import SocialBlock from "../socailBlock/socialBlock";
 
-class LoginComponent extends Component {
+class SignUpComponent extends Component {
 
     loginRef = React.createRef();
 
@@ -91,4 +91,6 @@ class LoginComponent extends Component {
     }
 }
 
-export default connect()(LoginComponent);
+export default {
+    component: connect()(SignUpComponent)
+} 

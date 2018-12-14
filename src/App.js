@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { renderRoutes } from 'react-router-config';
 import HeaderComponent from './component/header/header.js';
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -18,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
 const App = ({ route }) => {
     return (
         <Fragment>
-           <GlobalStyle />
-           <HeaderComponent />
+            <GlobalStyle />
+            <HeaderComponent />
             {renderRoutes(route.routes)}
         </Fragment>
     )

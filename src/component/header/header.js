@@ -23,8 +23,8 @@ class HeaderComponent extends Component {
                 </HeaderLeft>
                 <HeaderMid>
                     <StyledLink to={HOME}><P color="white">Home</P></StyledLink>
-                    <StyledLink to={FIREBASE}><P color="white">Firebase</P></StyledLink>
                     <StyledLink to={USERS}><P color="white">Users</P></StyledLink>
+                    <StyledLink to={FIREBASE}><P color="white">Firebase</P></StyledLink>
                 </HeaderMid>
                 <HeaderRight>
                     {isLogin === true ?
@@ -34,17 +34,7 @@ class HeaderComponent extends Component {
                         </Fragment>
                         :
                         <Fragment >
-                            <StyledLink
-                                to={
-                                    this.props.location
-                                        .pathname ===
-                                        "/"
-                                        ? HOME + LOGIN
-                                        : this.props
-                                            .location
-                                            .pathname +
-                                        LOGIN
-                                }><Button primary>Login</Button></StyledLink>
+                            <StyledLink to={LOGIN}><Button primary>Login</Button></StyledLink>
                             <StyledLink to={SIGNUP}><Button second>Sign Up</Button></StyledLink>
                         </Fragment>
                     }

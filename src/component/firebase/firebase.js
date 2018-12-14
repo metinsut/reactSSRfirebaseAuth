@@ -32,7 +32,7 @@ const mapStateToProps = state => {
 }
 
 const loadData = (state) => {
-    return state.firestore.ordered.detail ? state.firestore.ordered.detail : null
+    firestoreConnect(['detail']);
 }
 
 const FirebaseComp = compose(
