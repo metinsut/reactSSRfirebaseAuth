@@ -1,3 +1,5 @@
+## Authentication is NOT working
+
 ## Please copy paste scripts in html after build
 
 1- npm run build
