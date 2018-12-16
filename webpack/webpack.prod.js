@@ -20,7 +20,7 @@ const config = {
       new CleanWebpackPlugin(['live'], {
          root: path.join(__dirname, '..')
       }),
-      new CopyWebpackPlugin([{ from: "../build/static", to: "../live/static" }])
+      new CopyWebpackPlugin([{ from: "../build", to: "../live" }])
    ],
    externals: [webpackNodeExternals()]
 };

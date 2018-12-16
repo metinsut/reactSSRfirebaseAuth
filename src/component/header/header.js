@@ -24,7 +24,7 @@ class HeaderComponent extends Component {
                 <HeaderMid>
                     <StyledLink to={HOME}><P color="white">Home</P></StyledLink>
                     <StyledLink to={USERS}><P color="white">Users</P></StyledLink>
-                    <StyledLink to={FIREBASE}><P color="white">Firebase</P></StyledLink>
+                    {isLogin === true && <StyledLink to={FIREBASE}><P color="white">Firebase</P></StyledLink>}
                 </HeaderMid>
                 <HeaderRight>
                     {isLogin === true ?
